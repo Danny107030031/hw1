@@ -32,22 +32,32 @@ GetHUMD = lambda index,dataIn: [column[index] for column in dataIn if index in c
 final_data1 = map (float, GetHUMD('HUMD', target_data1))
 final_data_1 = list (final_data1)
 sum1 = sum (final_data_1)
+if sum1==0: 
+    sum1 = 'None'
 
 final_data2 = map (float, GetHUMD('HUMD', target_data2))
 final_data_2 = list (final_data2)
 sum2 = sum (final_data_2)
+if sum2==0: 
+    sum2 = 'None'
 
 final_data3 = map (float, GetHUMD('HUMD', target_data3))
 final_data_3 = list (final_data3)
 sum3 = sum (final_data_3)
+if sum3==0: 
+    sum3 = 'None'
 
 final_data4 = map (float, GetHUMD('HUMD', target_data4))
 final_data_4 = list (final_data4)
 sum4 = sum (final_data_4)
-
+if sum4==0: 
+    sum4 = 'None'
+    
 final_data5 = map (float, GetHUMD('HUMD', target_data5))
 final_data_5 = list (final_data5)
 sum5 = sum (final_data_5)
+if sum5==0: 
+    sum5 = 'None'
 #===========================
 # Part. 4
 # Print result
